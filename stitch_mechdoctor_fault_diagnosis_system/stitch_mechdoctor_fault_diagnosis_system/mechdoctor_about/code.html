@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f8f9ff", "on-primary-container": "#eeefff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "primary": "#004ac6", "on-error-container": "#93000a", "secondary-fixed-dim": "#bcc7de", "on-primary-fixed": "#00174b", "surface-bright": "#f8f9ff", "on-secondary-container": "#586377", "outline-variant": "#c3c6d7", "inverse-surface": "#213145", "on-secondary-fixed": "#111c2d", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#3c475a", "on-tertiary-fixed-variant": "#3f465c", "surface-container-low": "#eff4ff", "primary-fixed-dim": "#b4c5ff", "inverse-primary": "#b4c5ff", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "on-secondary": "#ffffff", "secondary": "#545f73", "surface-container-lowest": "#ffffff", "primary-container": "#2563eb", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-surface-variant": "#434655", "tertiary-container": "#656d84", "on-background": "#0b1c30", "surface-variant": "#d3e4fe", "on-tertiary-fixed": "#131b2e", "error-container": "#ffdad6", "surface-container": "#e5eeff", "on-primary": "#ffffff", "on-surface": "#0b1c30", "error": "#ba1a1a", "on-primary-fixed-variant": "#003ea8", "tertiary-fixed": "#dae2fd", "on-tertiary-container": "#eef0ff", "tertiary": "#4d556b", "outline": "#737686", "tertiary-fixed-dim": "#bec6e0", "secondary-container": "#d5e0f8", "primary-fixed": "#dbe1ff", "secondary-fixed": "#d8e3fb", "surface-tint": "#0053db" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin": "1.5rem", "gutter": "1rem", "margin-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "headline-xl": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "headline-lg": [ "Inter" ] }, "fontSize": { "headline-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-xl": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/40 z-50 px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><img alt="MechDoctor Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKVm4vbqCYMt_GLbevuYveVAcnVFq0UBFF0XHJr6O0idHmVI7ZbWuxi1p3odRdzMBVtxnQMx-ehQ6lKWq4_PDBxOpHrkn84AQ1C3NBfPu08CRbDpZDm0as22SpXF821n0IqeJXlffUd79fiZ_sDnAE8z3WkhaYxRaVGypAMKu9Fofh1z2FcHZdijHj1YkRxceebFicpkZ5KLHeKDMuGGEnEO0dW7D_42w91uTpREXJi2kqZIdexagm5A"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">MechDoctor</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">v1.0.4 Demo</span></div><span class="font-label-sm text-label-sm text-on-surface-variant tracking-normal">Mechanical Fault Diagnosis System</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded border border-outline-variant/40 font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-[#059669] inline-block animate-pulse"></span><span class="text-on-surface font-semibold">Backend: Connected</span><span class="text-on-surface-variant font-normal">(200 OK /api/health)</span></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded border border-outline-variant/40 font-label-sm text-label-sm"><span class="text-on-surface-variant">Rule Engine:</span><span class="text-primary font-semibold">Ready</span><span class="text-outline-variant">|</span><span class="text-on-surface-variant">AI Provider:</span><span class="text-primary font-semibold">Gemini-1.5</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest border-r border-outline-variant/40 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Navigation &amp; Diagnostics</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="diagnose-machine" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-body-md text-body-md">Diagnose Machine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="diagnosis-report" href="#"><span class="material-symbols-outlined text-[20px]">troubleshoot</span><span class="font-body-md text-body-md">Diagnosis Report</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="how-it-works" href="#"><span class="material-symbols-outlined text-[20px]">schema</span><span class="font-body-md text-body-md">How It Works</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="safety-guidelines" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-body-md text-body-md">Safety Guidelines</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="font-body-md text-body-md">About</span></a></nav></div><div class="p-space-md border-t border-outline-variant/40 bg-surface-container-low"><div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">warning</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm font-semibold uppercase text-error">Industrial Notice</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Preliminary guidance only. Not a certified engineering diagnosis. Always comply with OSHA / ISO standards.</p></div></div></div></aside><div class="pl-72"><main class="w-full pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Mission-Control Sub-Header -->
+<div class="px-margin py-space-lg bg-surface-container-low flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Engineering Dossier // SPEC-2025</span>
+<span class="text-outline-variant font-label-sm text-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Doc Ref: MD-SYS-ARCH-v1.0.4</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">About MechDoctor</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Academic engineering project specifications, system architecture, and telemetry-to-verdict operational overview.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="bg-surface-container-lowest px-space-md py-space-xs rounded shadow-sm flex items-center gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Runtime Mode</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Hybrid Deterministic + LLM</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+</div>
+<div class="bg-surface-container-lowest px-space-md py-space-xs rounded shadow-sm flex items-center gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Platform Status</span>
+<span class="font-label-md text-label-md text-[#059669] font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#059669] animate-ping inline-block"></span> 99.98% High-Avail
+          </span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-margin flex flex-col gap-space-xl">
+<!-- SECTION 1: Problem vs Solution Comparative Matrix -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-bold">01</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Problem Statement &amp; Paradigm Shift</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vibration Analysis Disconnect</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- The Problem -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col gap-space-md pl-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">dangerous</span> The Industrial Problem
+              </span>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-space-xs py-0.5 rounded">Latency &amp; Over-Specialization</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Unscheduled Rotational Asset Collapse</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Industrial facilities hemorrhage an estimated $50B annually in unexpected downtime. Factory shop-floors frequently lack constant vibration instrumentation on Class 1 and Class 2 auxiliary machinery.
+            </p>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">report_problem</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Missed Micro-Signatures</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Early indicators (e.g. 0.8 mm/s velocity creep, bearing cage whines, 7°C stator delta) escape unassisted senses until spalling causes seizure.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">query_stats</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Specialist Scarcity</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full-spectrum Fast Fourier Transform (FFT) analysis relies on calibrated $15k+ analyzers and certified ISO 18436 category analysts who are rarely on-shift during graveyard runs.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mean Time To Detection (Traditional)</span>
+<span class="font-label-md text-label-md text-error font-bold">144 to 360 Hours</span>
+</div>
+</div>
+<!-- The MechDoctor Solution -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex flex-col gap-space-md pl-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> The MechDoctor Architecture
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold px-space-xs py-0.5 rounded">Deterministic Speed + AI Synthesis</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Democratized Real-Time Diagnostics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              MechDoctor pairs rigorous deterministic mechanical boundary checks with multi-tier generative engineering logic to deliver immediate prescriptive root-cause action on shop-floor tablets.
+            </p>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">terminal</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Frontline Translation</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Converts operator sensory checks and portable spot measurements (laser tach, IR gun, contact probe) into standard ISO 10816-3 severity zones instantly.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">psychology</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Institutional Knowledge Bridge</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Generates prioritized LOTO lockouts, step-by-step disassembly guidelines, and bearing replacement specs without waiting for off-site specialist consultation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mean Time To Guidance (MechDoctor)</span>
+<span class="font-label-md text-label-md text-[#059669] font-bold">&lt; 1,200 Milliseconds</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: System Architecture Flowchart Diagram -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-bold">02</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">End-to-End System Architecture</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">FLOW: CLIENT → FLASK → RULES → AI → RENDER</span>
+</div>
+<!-- Diagram Canvas -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-md relative items-stretch">
+<!-- Node 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between group hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold">Node 01</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Shopfloor Client</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vite + React UI with responsive tactile controls</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-lowest rounded p-space-xs flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tailwind Tokens</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zod Form Validation</span>
+</div>
+</div>
+<!-- Node 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between group hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold">Node 02</span>
+<span class="w-2 h-2 rounded-full bg-[#059669]"></span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Flask Microservice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-efficiency Python API gateway</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-lowest rounded p-space-xs flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-[#059669] font-semibold">POST /api/diagnose</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Telemetry Ingestion</span>
+</div>
+</div>
+<!-- Node 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between group hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold">Node 03</span>
+<span class="w-2 h-2 rounded-full bg-[#d97706]"></span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Deterministic Engine</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ISO 10816 thresholds &amp; mechanical fault matrix</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-lowest rounded p-space-xs flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-[#d97706] font-semibold">Rule Matrix Eval</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Output: Fault Code Vector</span>
+</div>
+</div>
+<!-- Node 4 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between group hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold">Node 04</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Dual AI Synthesis</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tiered multi-provider reasoning cluster</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-lowest rounded p-space-xs flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Gemini 1.5 → Groq</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Markdown Synthesis</span>
+</div>
+</div>
+<!-- Node 5 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between group hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold">Node 05</span>
+<span class="w-2 h-2 rounded-full bg-[#059669]"></span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Synthesis Report</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Structured remediation protocols &amp; visual triage</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-lowest rounded p-space-xs flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-[#059669] font-semibold">Action Matrix</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF Export &amp; Work Orders</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Pipeline Dataflow Breakdown -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">account_tree</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Deterministic-First Guarantee</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">AI never predicts raw failure thresholds. It articulates and context-analyzes structured rule outputs.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="px-space-sm py-1 bg-surface-container-lowest rounded text-on-surface font-mono font-medium">Input (JSON)</span>
+<span class="text-on-surface-variant">→</span>
+<span class="px-space-sm py-1 bg-surface-container-lowest rounded text-on-surface font-mono font-medium">Rule Eval (&lt;5ms)</span>
+<span class="text-on-surface-variant">→</span>
+<span class="px-space-sm py-1 bg-surface-container-lowest rounded text-on-surface font-mono font-medium">LLM Prompt Injection</span>
+<span class="text-on-surface-variant">→</span>
+<span class="px-space-sm py-1 bg-surface-container-lowest rounded text-on-surface font-mono font-medium">Rendered HTML</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: AI Resiliency Strategy & Tiers -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-bold">03</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">AI Provider Hierarchy &amp; Resiliency Strategy</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero-Failure Plant Fallback Architecture</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Tier 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">Tier 1: Primary</span>
+<span class="font-label-sm text-label-sm text-primary font-mono font-semibold">ONLINE DEFAULT</span>
+</div>
+<div class="flex items-center gap-space-sm my-1">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">cognition</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Google Gemini 1.5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">gemini-1.5-flash-latest</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Provides deep contextual reasoning across multiple concurrent mechanical symptoms. Formulates ISO 10816 root-cause explanations and generates customized, non-generic step-by-step rebuild checklists.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded p-space-sm flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Typical Latency:</span>
+<span class="text-on-surface font-mono font-semibold">650ms - 900ms</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Max Context:</span>
+<span class="text-on-surface font-mono font-semibold">1,000,000 Tokens</span>
+</div>
+</div>
+</div>
+<!-- Tier 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-[#fff7ed] text-[#c2410c] font-label-sm text-label-sm font-semibold">Tier 2: Speed Fallback</span>
+<span class="font-label-sm text-label-sm text-[#c2410c] font-mono font-semibold">AUTO FAILOVER</span>
+</div>
+<div class="flex items-center gap-space-sm my-1">
+<div class="w-10 h-10 rounded bg-[#ffedd5] flex items-center justify-center text-[#c2410c]">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Groq LPU (LLaMA-3)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">llama-3-70b-versatile</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Ultra-low latency inference engine on dedicated LPUs. Automatically triggered whenever primary API returns HTTP 429 (rate quota reached) or when round-trip latency exceeds 2,500ms.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded p-space-sm flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Typical Latency:</span>
+<span class="text-on-surface font-mono font-semibold">180ms - 320ms</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Failover Condition:</span>
+<span class="text-on-surface font-mono font-semibold">&gt; 2500ms or 429/5xx</span>
+</div>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">Tier 3: Failsafe Template</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono font-semibold">AIR-GAPPED READY</span>
+</div>
+<div class="flex items-center gap-space-sm my-1">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">offline_bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Static Deterministic Matrix</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Built-in Python Dictionary</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Guarantees plant floor operation without any internet egress or external cloud dependency. Interpolates structured troubleshooting checklists directly from hardcoded ISO standards.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded p-space-sm flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Typical Latency:</span>
+<span class="text-on-surface font-mono font-semibold">&lt; 4ms (Local CPU)</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Network Demand:</span>
+<span class="text-[#059669] font-mono font-semibold">0 KB (Zero Outbound)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Supported Machine Types Matrix -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-bold">04</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Supported Equipment Diagnostics Scope</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Core Industrial Machinery Catalog</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Machine 1: Electric Motor -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">TYPE: EM-IND-3P</span>
+<span class="material-symbols-outlined text-primary text-[20px]">electric_meter</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">3-Phase Induction Motor</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standard foot-mounted and flange-mounted squirrel cage units across IEC 60034 frame sizes.</p>
+<div class="flex flex-col gap-1 mt-space-sm pt-space-xs bg-surface-container-low rounded p-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Monitored Telemetry:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono leading-tight">Vibration RMS (mm/s), Stator Temp (°C), Acoustic FFT Whine, Phase Amperage</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISO Standard:</span>
+<span class="font-label-sm text-label-sm font-mono font-medium text-on-surface">ISO 10816-3 Class II</span>
+</div>
+</div>
+<!-- Machine 2: Water Pump -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">TYPE: CP-HYD-01</span>
+<span class="material-symbols-outlined text-primary text-[20px]">water_pump</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Centrifugal Water Pump</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Single-stage end-suction and multistage split-case pumps transporting water and slurry fluids.</p>
+<div class="flex flex-col gap-1 mt-space-sm pt-space-xs bg-surface-container-low rounded p-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Monitored Telemetry:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono leading-tight">Impeller Vibe, Suction Pressure (bar), Casing Temp, Mechanical Seal Leakage</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISO Standard:</span>
+<span class="font-label-sm text-label-sm font-mono font-medium text-on-surface">ISO 9906 / ANSI HI 9.6</span>
+</div>
+</div>
+<!-- Machine 3: Gearbox -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">TYPE: GB-HEL-04</span>
+<span class="material-symbols-outlined text-primary text-[20px]">settings_suggest</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Industrial Helical Gearbox</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Speed reducers and increasers in conveyor drives, extruders, and agitators with planetary or spur sets.</p>
+<div class="flex flex-col gap-1 mt-space-sm pt-space-xs bg-surface-container-low rounded p-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Monitored Telemetry:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono leading-tight">Gear Mesh Frequency, Sump Temp (°C), Backlash Backpressure, Oil Dielectric</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISO Standard:</span>
+<span class="font-label-sm text-label-sm font-mono font-medium text-on-surface">ISO 8579-2 Sound/Vibe</span>
+</div>
+</div>
+<!-- Machine 4: Conveyor Belt -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">TYPE: CV-MAT-HV</span>
+<span class="material-symbols-outlined text-primary text-[20px]">conveyor_belt</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Heavy Bulk Conveyor</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Material handling continuous flat/troughed belt drive assemblies, head pulleys, and tail bearings.</p>
+<div class="flex flex-col gap-1 mt-space-sm pt-space-xs bg-surface-container-low rounded p-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Monitored Telemetry:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono leading-tight">Pulley Bearings (°C), Idler Noise Profile, Belt Velocity Deviation, Line Tension</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISO Standard:</span>
+<span class="font-label-sm text-label-sm font-mono font-medium text-on-surface">CEMA 502 / ISO 5048</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Technical Specifications & API Documentation Table -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-bold">05</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Technical Specifications &amp; API Reference</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REST JSON INTERFACE</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-high">
+<tr>
+<th class="py-space-sm px-space-md font-label-md text-label-md uppercase text-on-surface-variant font-semibold">HTTP Method</th>
+<th class="py-space-sm px-space-md font-label-md text-label-md uppercase text-on-surface-variant font-semibold">Endpoint Route</th>
+<th class="py-space-sm px-space-md font-label-md text-label-md uppercase text-on-surface-variant font-semibold">Payload / Query</th>
+<th class="py-space-sm px-space-md font-label-md text-label-md uppercase text-on-surface-variant font-semibold">Target Functionality</th>
+<th class="py-space-sm px-space-md font-label-md text-label-md uppercase text-on-surface-variant font-semibold">SLA / Response</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-0.5 rounded bg-[#d1fae5] text-[#047857] font-mono font-bold text-label-sm">GET</span>
+</td>
+<td class="py-space-sm px-space-md font-mono text-on-surface font-semibold">/api/health</td>
+<td class="py-space-sm px-space-md font-mono text-on-surface-variant">None</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Returns backend worker status, Gemini quota counters, and ping latency</td>
+<td class="py-space-sm px-space-md font-mono text-[#059669]">&lt; 15ms (200 OK)</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-0.5 rounded bg-[#d1fae5] text-[#047857] font-mono font-bold text-label-sm">GET</span>
+</td>
+<td class="py-space-sm px-space-md font-mono text-on-surface font-semibold">/api/machines</td>
+<td class="py-space-sm px-space-md font-mono text-on-surface-variant">?category=rotating</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Retrieves full equipment parameter definitions, normal operating bands, and sensor limits</td>
+<td class="py-space-sm px-space-md font-mono text-[#059669]">&lt; 30ms (200 OK)</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-mono font-bold text-label-sm">POST</span>
+</td>
+<td class="py-space-sm px-space-md font-mono text-on-surface font-semibold">/api/diagnose</td>
+<td class="py-space-sm px-space-md font-mono text-on-surface-variant">{ machine_id, metrics[], obs[] }</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Executes rule engine evaluation, generates severity verdict, queries AI synthesis pipeline</td>
+<td class="py-space-sm px-space-md font-mono text-primary">&lt; 1200ms (201 Created)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 6: Project Metadata & Engineering Provenance Footer Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">College Capstone Demonstration Edition</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono">v1.0.4-PROD</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mechanical &amp; Electrical Engineering Systems Senior Capstone Project. Designed for shop-floor industrial maintenance applications.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-mono shadow-sm">Python Flask</span>
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-mono shadow-sm">React 18</span>
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-mono shadow-sm">Tailwind CSS</span>
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-mono shadow-sm">Google GenAI SDK</span>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

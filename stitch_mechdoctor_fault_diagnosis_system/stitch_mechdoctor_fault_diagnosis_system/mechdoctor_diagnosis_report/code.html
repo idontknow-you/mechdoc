@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f8f9ff", "on-primary-container": "#eeefff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "primary": "#004ac6", "on-error-container": "#93000a", "secondary-fixed-dim": "#bcc7de", "on-primary-fixed": "#00174b", "surface-bright": "#f8f9ff", "on-secondary-container": "#586377", "outline-variant": "#c3c6d7", "inverse-surface": "#213145", "on-secondary-fixed": "#111c2d", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#3c475a", "on-tertiary-fixed-variant": "#3f465c", "surface-container-low": "#eff4ff", "primary-fixed-dim": "#b4c5ff", "inverse-primary": "#b4c5ff", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "on-secondary": "#ffffff", "secondary": "#545f73", "surface-container-lowest": "#ffffff", "primary-container": "#2563eb", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-surface-variant": "#434655", "tertiary-container": "#656d84", "on-background": "#0b1c30", "surface-variant": "#d3e4fe", "on-tertiary-fixed": "#131b2e", "error-container": "#ffdad6", "surface-container": "#e5eeff", "on-primary": "#ffffff", "on-surface": "#0b1c30", "error": "#ba1a1a", "on-primary-fixed-variant": "#003ea8", "tertiary-fixed": "#dae2fd", "on-tertiary-container": "#eef0ff", "tertiary": "#4d556b", "outline": "#737686", "tertiary-fixed-dim": "#bec6e0", "secondary-container": "#d5e0f8", "primary-fixed": "#dbe1ff", "secondary-fixed": "#d8e3fb", "surface-tint": "#0053db" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin": "1.5rem", "gutter": "1rem", "margin-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "headline-xl": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "headline-lg": [ "Inter" ] }, "fontSize": { "headline-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-xl": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/40 z-50 px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><img alt="MechDoctor Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKVm4vbqCYMt_GLbevuYveVAcnVFq0UBFF0XHJr6O0idHmVI7ZbWuxi1p3odRdzMBVtxnQMx-ehQ6lKWq4_PDBxOpHrkn84AQ1C3NBfPu08CRbDpZDm0as22SpXF821n0IqeJXlffUd79fiZ_sDnAE8z3WkhaYxRaVGypAMKu9Fofh1z2FcHZdijHj1YkRxceebFicpkZ5KLHeKDMuGGEnEO0dW7D_42w91uTpREXJi2kqZIdexagm5A"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">MechDoctor</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">v1.0.4 Demo</span></div><span class="font-label-sm text-label-sm text-on-surface-variant tracking-normal">Mechanical Fault Diagnosis System</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded border border-outline-variant/40 font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-[#059669] inline-block animate-pulse"></span><span class="text-on-surface font-semibold">Backend: Connected</span><span class="text-on-surface-variant font-normal">(200 OK /api/health)</span></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded border border-outline-variant/40 font-label-sm text-label-sm"><span class="text-on-surface-variant">Rule Engine:</span><span class="text-primary font-semibold">Ready</span><span class="text-outline-variant">|</span><span class="text-on-surface-variant">AI Provider:</span><span class="text-primary font-semibold">Gemini-1.5</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest border-r border-outline-variant/40 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Navigation &amp; Diagnostics</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="diagnose-machine" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-body-md text-body-md">Diagnose Machine</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="diagnosis-report" href="#"><span class="material-symbols-outlined text-[20px]">troubleshoot</span><span class="font-body-md text-body-md">Diagnosis Report</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="how-it-works" href="#"><span class="material-symbols-outlined text-[20px]">schema</span><span class="font-body-md text-body-md">How It Works</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="safety-guidelines" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-body-md text-body-md">Safety Guidelines</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="font-body-md text-body-md">About</span></a></nav></div><div class="p-space-md border-t border-outline-variant/40 bg-surface-container-low"><div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">warning</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm font-semibold uppercase text-error">Industrial Notice</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Preliminary guidance only. Not a certified engineering diagnosis. Always comply with OSHA / ISO standards.</p></div></div></div></aside><div class="pl-72"><main class="w-full pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin py-space-lg flex flex-col gap-space-lg max-w-[1600px] mx-auto w-full">
+<!-- Top Breadcrumb & Status Telemetry Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer transition-colors">DIAGNOSTICS</span>
+<span>/</span>
+<span class="text-on-surface font-semibold">REPORT ID: DIAG-2025-08492</span>
+<span class="ml-space-xs px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm font-semibold tracking-wide">CONFIDENTIAL INDUSTRIAL TELEMETRY</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="text-on-surface-variant">REPORT GENERATED:</span>
+<span class="font-semibold text-on-surface bg-surface-container px-2 py-0.5 rounded">2025-05-18 14:32:09 UTC</span>
+</div>
+</div>
+<!-- 1. Report Header & Engine Source Strip -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">Diagnosis Report: Electric Motor #M-402</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold uppercase">3-Phase Induction</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Facility Bay 04 • Heavy Slurry Feed Pump Skid • Nominal Rating: 45 kW / 60 HP
+        </p>
+<!-- Pipeline Source Badges -->
+<div class="flex flex-wrap items-center gap-space-xs mt-space-xs">
+<!-- Gemini AI Active -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#eff6ff] text-[#1d4ed8] font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#1d4ed8] animate-pulse"></span>
+<span class="font-semibold">AI Provider: Gemini 1.5 Pro</span>
+<span class="text-xs opacity-75">(Primary Synthesizer)</span>
+</div>
+<!-- Fallback Groq -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Fallback: Groq LLaMA-3 (Standby)</span>
+</div>
+<!-- Rule Engine Match -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/60 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">rule</span>
+<span class="font-semibold">Deterministic Rule Engine:</span>
+<span>Matched 3 Rule Patterns</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-md text-body-md font-medium" onclick="window.location.hash='#diagnose-machine'">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Edit Inputs</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-primary text-on-primary hover:bg-[#003ea8] transition-colors font-body-md text-body-md font-semibold" onclick="window.location.reload()">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Analyse Again</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-body-md text-body-md font-medium" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print / PDF</span>
+</button>
+</div>
+</div>
+<!-- 6. Critical Safety Directive Banner (Placed prominently at upper diagnostic viewport) -->
+<div class="bg-error-container/40 p-space-md rounded-lg flex flex-col md:flex-row items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-error flex items-center justify-center shrink-0 text-on-error">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-error uppercase tracking-wider">Critical Safety Directive</span>
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm uppercase">Burn &amp; Kinetic Risk</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">
+          Do not touch the motor casing barehanded: recorded casing temperature of <span class="font-label-md font-bold text-error">84.5 °C</span> carries immediate third-degree burn hazard. Prior to any physical or mechanical inspection, execute mandatory <span class="font-semibold underline decoration-error">OSHA 1910.147 Lockout/Tagout (LOTO)</span> protocol. De-energize 480V upstream circuit breaker #CB-402 and verify zero energy state with a calibrated CAT IV 600V digital multimeter.
+        </p>
+</div>
+</div>
+<!-- 2. Submitted Operational Readings Strip -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">speed</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-on-surface">Submitted Telemetry Readings &amp; Baselines</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sample Captured via Portable Analyzer #FLK-810</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-space-xs pt-space-xs">
+<!-- Metric 1: Machine Class -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Machine Type</span>
+<div class="mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">Electric Motor</span>
+<span class="font-label-sm text-label-sm text-secondary">4-Pole Squirrel Cage</span>
+</div>
+</div>
+<!-- Metric 2: Housing Temp -->
+<div class="p-space-sm bg-error-container/30 rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error uppercase font-medium">Housing Temp</span>
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+<div class="mt-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">84.5 <span class="text-xs font-normal text-on-surface-variant">°C</span></span>
+<span class="font-label-sm text-label-sm text-error block font-semibold">+19.5 °C OVER LIMIT</span>
+</div>
+</div>
+<!-- Metric 3: Radial Vibration -->
+<div class="p-space-sm bg-error-container/30 rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error uppercase font-medium">Vibration RMS</span>
+<span class="material-symbols-outlined text-[16px] text-error">warning</span>
+</div>
+<div class="mt-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">5.8 <span class="text-xs font-normal text-on-surface-variant">mm/s</span></span>
+<span class="font-label-sm text-label-sm text-error block font-semibold">ISO 10816 Zone C</span>
+</div>
+</div>
+<!-- Metric 4: Operating Speed -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Shaft Speed</span>
+<div class="mt-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">1420 <span class="text-xs font-normal text-on-surface-variant">RPM</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Sync: 1500 RPM (50Hz)</span>
+</div>
+</div>
+<!-- Metric 5: Acoustic Signature -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Acoustic State</span>
+<div class="mt-1">
+<span class="font-body-md text-body-md font-semibold text-on-surface block leading-tight">High Pitch Whine</span>
+<span class="font-label-sm text-label-sm text-secondary">Broadband resonance</span>
+</div>
+</div>
+<!-- Metric 6: Fluid / Grease Leakage -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Seal / Leakage</span>
+<div class="mt-1">
+<span class="font-body-md text-body-md font-semibold text-[#059669] block leading-tight">None Evident</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Casing seals dry</span>
+</div>
+</div>
+<!-- Metric 7: Performance Sag -->
+<div class="p-space-sm bg-[#fff7ed] rounded flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-[#c2410c] uppercase font-medium">Torque / Slip Sag</span>
+<div class="mt-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">8.0% <span class="text-xs font-normal text-on-surface-variant">sag</span></span>
+<span class="font-label-sm text-label-sm text-[#c2410c] block font-medium">Elevated Slip</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Executive AI Summary Box -->
+<div class="bg-surface-container p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">psychology</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-primary">Synthesized Engineering Diagnosis Summary</span>
+</div>
+<blockquote class="font-body-lg text-body-lg text-on-surface font-medium leading-relaxed mt-1">
+        “System Summary: Operational readings indicate severe thermal excursion (<span class="font-semibold text-error">+19.5 °C</span> above nominal continuous baseline) concurrent with elevated radial vibration velocity (<span class="font-semibold text-error">5.8 mm/s RMS</span>) and characteristic high-frequency acoustic whining. Primary indicators point strongly toward drive-end (DE) bearing mechanical deterioration, specifically micro-spalling of the inner raceway coupled with severe hydrodynamic lubrication starvation.”
+      </blockquote>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>ISO Classification: <strong>ISO 10816-3 Class II (Rigid Mount)</strong></span>
+<span>•</span>
+<span>Rule Engine Correlation: <strong>Rules R-MOTOR-01, R-BEAR-04, R-ACOUST-02 Activated</strong></span>
+</div>
+</div>
+<!-- 4. Ranked Possible Faults (Technical Detailed Cards) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-lg text-headline-lg text-on-surface">Ranked Fault Hypotheses</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Ranked deterministically by symptom matching matrix, acoustic spectral correlation, and thermodynamic thresholds.</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded">Ordered by Diagnostic Certainty</span>
+</div>
+<!-- FAULT CARD #1: Rank 1 (Primary / Expanded) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Top Card Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs pb-space-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">1</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Bearing Inner Race Spalling / Lubrication Starvation</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Component: Deep Groove Ball Bearing (Drive End SKF 6312-2Z or equivalent)</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-[#eff6ff] text-[#1d4ed8] font-label-sm text-label-sm font-semibold">High Confidence</span>
+<span class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Severity: Moderate / Actionable</span>
+</div>
+</div>
+<!-- Technical Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Col 1: Supporting Symptoms & Signal Signatures (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Supporting Diagnostic Signatures</span>
+<ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface">
+<li class="flex items-start gap-2 bg-surface-container-low p-space-xs rounded">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">thermostat</span>
+<span>Housing temperature elevated to <strong class="font-semibold text-error">84.5 °C</strong> at drive-end (DE) bearing bracket (nominal steady-state ceiling is 65 °C).</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low p-space-xs rounded">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">graphic_eq</span>
+<span>High-pitched acoustic whine characteristic of Ball Pass Frequency Inner Race (BPFI) and outer raceway harmonics under localized friction.</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low p-space-xs rounded">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">vibration</span>
+<span>Radial velocity vibration at <strong class="font-semibold text-error">5.8 mm/s RMS</strong> violates ISO 10816-3 Class II Alert threshold (4.5 mm/s maximum acceptable).</span>
+</li>
+</ul>
+<!-- Recommended Primary Action Callout -->
+<div class="mt-2 p-space-sm rounded bg-surface-container flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Immediate Prescribed Action</span>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+                Flush and repack bearing cavity with ISO VG 100 polyurea high-temperature synthetic grease. If acoustic whining and thermal baseline persist past 1 hour of runtime, schedule bearing replacement during the next maintenance window.
+              </p>
+</div>
+</div>
+<!-- Col 2: Step-by-Step Inspection Protocol (Accordion/Step View) (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-xs bg-surface rounded-lg p-space-sm">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Standard Maintenance Inspection Protocol (MIP-04)</span>
+<span class="font-label-sm text-label-sm text-[#059669] font-medium">4 Verified Engineering Steps</span>
+</div>
+<!-- Steps List -->
+<div class="flex flex-col gap-2">
+<div class="p-2.5 rounded bg-surface-container-lowest flex items-start gap-3 shadow-sm">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm font-semibold shrink-0">1</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">De-energize &amp; Enforce LOTO</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lock out motor starter breaker at switchgear panel 4B. Tag with personnel hazard badge and verify electrical isolation at motor terminal box.</span>
+</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest flex items-start gap-3 shadow-sm">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm font-semibold shrink-0">2</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Differential Thermal Isolation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Use calibrated infrared pyrometer to compare drive-end (DE) versus non-drive-end (NDE) bearing caps. A gradient &gt;12 °C confirms localized DE bearing failure over stator heating.</span>
+</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest flex items-start gap-3 shadow-sm">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm font-semibold shrink-0">3</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Purge Grease Inspection &amp; Particulate Check</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Open drain plug. Purge 15g grease. Inspect for charred/blackened discoloration, burnt petroleum odor, or microscopic bronze/steel flaking indicating raceway spall.</span>
+</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest flex items-start gap-3 shadow-sm">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm font-semibold shrink-0">4</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Radial Runout &amp; Play Measurement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mount magnetic base dial indicator on drive shaft collar. Apply upward radial pry force with brass bar. Total indicated reading (TIR) must not exceed 0.05 mm.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FAULT CARD #2: Rank 2 (Secondary) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm max-w-3xl">
+<span class="w-8 h-8 rounded bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm shrink-0">2</span>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dynamic Rotor Imbalance &amp; Shaft Misalignment</span>
+<span class="px-2 py-0.5 rounded bg-[#fff7ed] text-[#c2410c] font-label-sm text-label-sm font-semibold">Medium Confidence</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Elevated radial vibration may partly stem from angular or parallel misalignment across the flexible grid coupling, contributing to load-side resistance and the observed 8% slip sag.
+            </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase">Action Required:</span>
+<span class="font-body-sm text-body-sm text-on-surface">Inspect flexible coupling elastomer insert for rubber dusting; execute dual-axis laser alignment check during next planned shutdown.</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center md:flex-col justify-end gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISO Severity: Zone B/C</span>
+<button class="px-3 py-1.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors font-medium">View Analysis</button>
+</div>
+</div>
+<!-- FAULT CARD #3: Rank 3 (Tertiary) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm max-w-3xl">
+<span class="w-8 h-8 rounded bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-headline-sm shrink-0">3</span>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Stator Winding Insulation Breakdown (Phase-to-Phase)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Low Confidence</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              While high surface temperature is recorded, the absence of documented phase current unbalance or electrical humming lowers the likelihood of winding shorting.
+            </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase">Action Required:</span>
+<span class="font-body-sm text-body-sm text-on-surface">Conduct 500V DC Megger insulation resistance test between phase leads and motor ground if mechanical bearing replacement does not normalize casing temperature.</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center md:flex-col justify-end gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Secondary Differential</span>
+<button class="px-3 py-1.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors font-medium">View Analysis</button>
+</div>
+</div>
+</div>
+<!-- 5. Information Uncertainty & Missing Data Box -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col md:flex-row items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-secondary-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">contact_support</span>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Diagnostic Uncertainty &amp; Missing Telemetry Vectors</span>
+<span class="px-2 py-0.5 rounded bg-[#eff6ff] text-[#1d4ed8] font-label-sm text-label-sm font-semibold">3 Missing Variables</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          The precision of this AI-assisted diagnosis is bounded by incomplete instrumentation inputs. Providing the following three parameters will eliminate electrical fault ambiguity and calculate residual bearing life expectancy:
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">electric_meter</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Phase Currents (L1, L2, L3)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Required to verify current unbalance vs stator winding breakdown.</span>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">history</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Lubrication Log Date &amp; Grease Spec</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Operating hours since last relubrication cycle missing from CMMS.</span>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">analytics</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Narrowband FFT Spectra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Exact 1X, 2X, and 3X harmonic velocity amplitudes not uploaded.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sign-off & Audit Signature Block -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Triage Engineer</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">D. Vasquez (Staff Reliability Eng.)</span>
+<span class="font-label-sm text-label-sm text-secondary">Badge #RE-8821 • Certified Cat III Vibration</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Audit Status</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#059669]"></span>
+<span class="font-body-md text-body-md text-[#059669] font-semibold">Triaged &amp; Logged to CMMS</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Work Order #WO-2025-4491 Generated</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Next Review Milestone</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Before 18:00 UTC (End of Shift B)</span>
+<span class="font-label-sm text-label-sm text-secondary">Thermographic re-check scheduled</span>
+</div>
+</div>
+<!-- 7. Prominent Technical Disclaimer -->
+<div class="p-space-sm bg-surface-container-low rounded flex items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span>
+<strong>LEGAL &amp; COMPLIANCE NOTICE:</strong> This diagnostic summary is computer-generated advisory telemetry based on machine symptom heuristics and machine learning inference. It does not constitute a certified professional engineering sign-off. All corrective maintenance, disassemblies, and operational changes must be independently validated and authorized by a licensed mechanical reliability engineer in accordance with local site safety rules and manufacturer warranty standards.
+        </span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary shrink-0 hidden sm:inline">ISO 13374 / 17359 COMPLIANT</span>
+</div>
+</div>
+</div></main></div></body></html>

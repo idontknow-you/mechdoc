@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f8f9ff", "on-primary-container": "#eeefff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "primary": "#004ac6", "on-error-container": "#93000a", "secondary-fixed-dim": "#bcc7de", "on-primary-fixed": "#00174b", "surface-bright": "#f8f9ff", "on-secondary-container": "#586377", "outline-variant": "#c3c6d7", "inverse-surface": "#213145", "on-secondary-fixed": "#111c2d", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#3c475a", "on-tertiary-fixed-variant": "#3f465c", "surface-container-low": "#eff4ff", "primary-fixed-dim": "#b4c5ff", "inverse-primary": "#b4c5ff", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "on-secondary": "#ffffff", "secondary": "#545f73", "surface-container-lowest": "#ffffff", "primary-container": "#2563eb", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-surface-variant": "#434655", "tertiary-container": "#656d84", "on-background": "#0b1c30", "surface-variant": "#d3e4fe", "on-tertiary-fixed": "#131b2e", "error-container": "#ffdad6", "surface-container": "#e5eeff", "on-primary": "#ffffff", "on-surface": "#0b1c30", "error": "#ba1a1a", "on-primary-fixed-variant": "#003ea8", "tertiary-fixed": "#dae2fd", "on-tertiary-container": "#eef0ff", "tertiary": "#4d556b", "outline": "#737686", "tertiary-fixed-dim": "#bec6e0", "secondary-container": "#d5e0f8", "primary-fixed": "#dbe1ff", "secondary-fixed": "#d8e3fb", "surface-tint": "#0053db" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin": "1.5rem", "gutter": "1rem", "margin-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "headline-xl": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "headline-lg": [ "Inter" ] }, "fontSize": { "headline-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-xl": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/40 z-50 px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><img alt="MechDoctor Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKVm4vbqCYMt_GLbevuYveVAcnVFq0UBFF0XHJr6O0idHmVI7ZbWuxi1p3odRdzMBVtxnQMx-ehQ6lKWq4_PDBxOpHrkn84AQ1C3NBfPu08CRbDpZDm0as22SpXF821n0IqeJXlffUd79fiZ_sDnAE8z3WkhaYxRaVGypAMKu9Fofh1z2FcHZdijHj1YkRxceebFicpkZ5KLHeKDMuGGEnEO0dW7D_42w91uTpREXJi2kqZIdexagm5A"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">MechDoctor</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">v1.0.4 Demo</span></div><span class="font-label-sm text-label-sm text-on-surface-variant tracking-normal">Mechanical Fault Diagnosis System</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded border border-outline-variant/40 font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-[#059669] inline-block animate-pulse"></span><span class="text-on-surface font-semibold">Backend: Connected</span><span class="text-on-surface-variant font-normal">(200 OK /api/health)</span></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded border border-outline-variant/40 font-label-sm text-label-sm"><span class="text-on-surface-variant">Rule Engine:</span><span class="text-primary font-semibold">Ready</span><span class="text-outline-variant">|</span><span class="text-on-surface-variant">AI Provider:</span><span class="text-primary font-semibold">Gemini-1.5</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest border-r border-outline-variant/40 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Navigation &amp; Diagnostics</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="diagnose-machine" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-body-md text-body-md">Diagnose Machine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="diagnosis-report" href="#"><span class="material-symbols-outlined text-[20px]">troubleshoot</span><span class="font-body-md text-body-md">Diagnosis Report</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="how-it-works" href="#"><span class="material-symbols-outlined text-[20px]">schema</span><span class="font-body-md text-body-md">How It Works</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="safety-guidelines" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-body-md text-body-md">Safety Guidelines</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span class="font-body-md text-body-md">About</span></a></nav></div><div class="p-space-md border-t border-outline-variant/40 bg-surface-container-low"><div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">warning</span><div class="flex flex-col gap-0.5"><span class="font-label-sm text-label-sm font-semibold uppercase text-error">Industrial Notice</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Preliminary guidance only. Not a certified engineering diagnosis. Always comply with OSHA / ISO standards.</p></div></div></div></aside><div class="pl-72"><main class="w-full pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full p-space-md lg:p-margin gap-space-lg">
+<!-- Header & Preset Action Bar -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md pb-space-sm bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold bg-surface-container px-space-xs py-0.5 rounded">Diagnostic Workspace</span>
+<span class="font-label-sm text-label-sm text-secondary">ISO 10816-3 Compliant</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Diagnose Machine</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Input operational telemetry readings and observed physical symptoms to evaluate mechanical integrity.
+      </p>
+</div>
+<!-- Presets & Quick Reset -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary px-1 hidden md:inline">Presets:</span>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" id="btn-scenario-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">bolt</span>
+<span>Scenario 1 — Motor (Overheat &amp; Vib)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" id="btn-scenario-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">water_drop</span>
+<span>Scenario 2 — Pump (Cavitation &amp; Leak)</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded bg-surface-container-low hover:bg-surface-variant text-on-surface-variant font-label-md text-label-md transition-colors" id="btn-clear-top" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Clear</span>
+</button>
+</div>
+</div>
+<!-- Form Layout Grid (3 Columns: Form 2-col + Diagnostic Pipeline Telemetry Inspector) -->
+<form class="grid grid-cols-1 xl:grid-cols-12 gap-space-md" id="diagnosis-form" onsubmit="event.preventDefault(); simulateDiagnosis();">
+<!-- Main Input Section (8 Cols on XL) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Technical Columns (2 Col on Desktop) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- LEFT COLUMN: Quantitative Telemetry -->
+<div class="flex flex-col gap-space-md bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Quantitative Telemetry</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded">Group A: Continuous</span>
+</div>
+<!-- Machine Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between" for="machine-type">
+<span>Target Machine Selector</span>
+<span class="font-label-sm text-label-sm text-secondary">Asset ID: MC-8421</span>
+</label>
+<div class="relative flex items-center bg-surface-container-low rounded focus-within:bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary ml-3 text-[20px] pointer-events-none">precision_manufacturing</span>
+<select class="w-full bg-transparent py-2 pl-2 pr-8 font-body-md text-body-md text-on-surface appearance-none focus:outline-none cursor-pointer" id="machine-type">
+<option value="electric-motor">Electric Motor (Three-Phase Induction, 45 kW)</option>
+<option value="water-pump">Centrifugal Water Pump (End-Suction, 120 m³/h)</option>
+<option value="gearbox">Helical Industrial Gearbox (2-Stage, 14:1 Ratio)</option>
+<option value="conveyor-belt">Heavy-duty Bulk Conveyor Drive (Class 4)</option>
+</select>
+<span class="material-symbols-outlined text-secondary absolute right-2.5 pointer-events-none text-[18px]">unfold_more</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+<span>Operational Rating: 400V / 50Hz / Continuous Duty S1</span>
+</div>
+</div>
+<!-- Operating Temperature -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between" for="temp-input">
+<span>Operating Temperature</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium" id="temp-badge">Nominal State</span>
+</label>
+<div class="flex items-stretch rounded overflow-hidden shadow-sm bg-surface-container-low focus-within:bg-surface-container-lowest">
+<input class="w-full px-3 py-2 bg-transparent font-label-lg text-label-lg text-on-surface focus:outline-none" id="temp-input" placeholder="e.g. 52.5" step="0.1" type="number" value="54.2"/>
+<div class="flex items-center px-3 bg-surface-container font-label-md text-label-md text-secondary select-none font-semibold">
+                [ °C ]
+              </div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Normal baseline: 35.0 – 65.0 °C</span>
+<span class="text-error font-medium">Critical Trip: &gt; 85.0 °C</span>
+</div>
+</div>
+<!-- Vibration Level Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between">
+<span>Vibration Level (Velocity RMS)</span>
+<span class="font-label-sm text-label-sm text-secondary">ISO 10816-3</span>
+</label>
+<div class="grid grid-cols-1 gap-1.5" id="vibration-options">
+<label class="flex items-center justify-between p-2 rounded cursor-pointer transition-all bg-surface-container-low hover:bg-surface-container text-on-surface has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<div class="flex items-center gap-2">
+<input checked="" class="accent-primary w-4 h-4" name="vibration" type="radio" value="normal"/>
+<span class="font-body-md text-body-md font-medium">Zone A / B: Normal</span>
+</div>
+<span class="font-label-md text-label-md">0.0 – 2.8 mm/s</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded cursor-pointer transition-all bg-surface-container-low hover:bg-surface-container text-on-surface has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<div class="flex items-center gap-2">
+<input class="accent-primary w-4 h-4" name="vibration" type="radio" value="elevated"/>
+<span class="font-body-md text-body-md font-medium">Zone C: Slightly Elevated</span>
+</div>
+<span class="font-label-md text-label-md">2.8 – 4.5 mm/s</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded cursor-pointer transition-all bg-surface-container-low hover:bg-surface-container text-on-surface has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<div class="flex items-center gap-2">
+<input class="accent-primary w-4 h-4" name="vibration" type="radio" value="high"/>
+<span class="font-body-md text-body-md font-medium">Zone C/D: High Severity</span>
+</div>
+<span class="font-label-md text-label-md">4.5 – 7.1 mm/s</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded cursor-pointer transition-all bg-surface-container-low hover:bg-surface-container text-on-surface has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<div class="flex items-center gap-2">
+<input class="accent-primary w-4 h-4" name="vibration" type="radio" value="severe"/>
+<span class="font-body-md text-body-md font-medium">Zone D: Severe Danger</span>
+</div>
+<span class="font-label-md text-label-md text-error">&gt; 7.1 mm/s</span>
+</label>
+</div>
+</div>
+<!-- Operating Speed -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between" for="speed-input">
+<span>Operating Speed (Shaft)</span>
+<span class="font-label-sm text-label-sm text-secondary">Synchronous: 1500 RPM</span>
+</label>
+<div class="flex items-stretch rounded overflow-hidden shadow-sm bg-surface-container-low focus-within:bg-surface-container-lowest">
+<input class="w-full px-3 py-2 bg-transparent font-label-lg text-label-lg text-on-surface focus:outline-none" id="speed-input" placeholder="1450" step="1" type="number" value="1475"/>
+<div class="flex items-center px-3 bg-surface-container font-label-md text-label-md text-secondary select-none font-semibold">
+                [ RPM ]
+              </div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Calibrated Range: 0 – 3600 RPM</span>
+<span class="font-label-sm text-label-sm text-secondary">Slip: ~1.67%</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Qualitative & Observable Symptoms -->
+<div class="flex flex-col gap-space-md bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">hearing</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Field Observations</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded">Group B: Sensory / Physical</span>
+</div>
+<!-- Noise & Acoustic Character -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between" for="noise-char">
+<span>Noise Level &amp; Acoustic Character</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">graphic_eq</span>
+</label>
+<div class="relative flex items-center bg-surface-container-low rounded focus-within:bg-surface-container-lowest shadow-sm">
+<select class="w-full bg-transparent py-2 px-3 pr-8 font-body-md text-body-md text-on-surface appearance-none focus:outline-none cursor-pointer" id="noise-char">
+<option value="normal">Normal operating hum (Uniform white noise)</option>
+<option value="whining">High-pitched whining (Bearing race flaw / Frequency peak)</option>
+<option value="rumbling">Low-frequency rumbling (Unbalance or sub-harmonic)</option>
+<option value="knocking">Periodic knocking/clicking (Tooth mesh impact)</option>
+<option value="cavitation">Gravel churning / Cavitation crackle (Implosion shock)</option>
+</select>
+<span class="material-symbols-outlined text-secondary absolute right-2.5 pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Fluid / Lubricant Leakage -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between" for="leakage-status">
+<span>Fluid / Lubricant Leakage</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">opacity</span>
+</label>
+<div class="relative flex items-center bg-surface-container-low rounded focus-within:bg-surface-container-lowest shadow-sm">
+<select class="w-full bg-transparent py-2 px-3 pr-8 font-body-md text-body-md text-on-surface appearance-none focus:outline-none cursor-pointer" id="leakage-status">
+<option value="none">None detected (Dry casing / intact labyrinth seal)</option>
+<option value="minor">Minor seepage (&lt; 5 drops/min gland packing weep)</option>
+<option value="active">Continuous active leak (Puddle forming / seal blown)</option>
+<option value="emulsified">Lubricant discoloration / milky emulsified state</option>
+</select>
+<span class="material-symbols-outlined text-secondary absolute right-2.5 pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Performance / Output Drop -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between" for="performance-drop">
+<span>Performance / Output Drop</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">trending_down</span>
+</label>
+<div class="relative flex items-center bg-surface-container-low rounded focus-within:bg-surface-container-lowest shadow-sm">
+<select class="w-full bg-transparent py-2 px-3 pr-8 font-body-md text-body-md text-on-surface appearance-none focus:outline-none cursor-pointer" id="performance-drop">
+<option value="none">No drop (100% rated capacity verified)</option>
+<option value="mild">Mild loss (5–15% drop in discharge pressure/speed)</option>
+<option value="severe">Severe reduction (&gt; 25% drop or frequent trip)</option>
+</select>
+<span class="material-symbols-outlined text-secondary absolute right-2.5 pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Additional Field Observations Textarea -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center justify-between" for="field-notes">
+<span>Additional Field Observations &amp; Context</span>
+<span class="font-label-sm text-label-sm text-secondary">Free-form Telemetry</span>
+</label>
+<textarea class="w-full p-3 bg-surface-container-low focus:bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface focus:outline-none shadow-sm resize-none" id="field-notes" placeholder="e.g., Grease purge hole has metal filings; motor started tripping thermal overload relay after 4 hours continuous run." rows="4"></textarea>
+</div>
+</div>
+</div>
+<!-- Action Panel & Verification Banner -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">rule</span>
+<p class="font-body-sm text-body-sm leading-snug">
+            Readings will be validated against deterministic fault rules before AI synthesis.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-md py-2 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-md text-body-md font-medium transition-colors" id="btn-reset" type="button">
+            Reset Inputs
+          </button>
+<button class="flex items-center justify-center gap-2 px-space-lg py-2 rounded bg-primary text-on-primary font-headline-sm text-headline-sm hover:bg-primary/90 transition-all shadow-md active:scale-[0.99]" id="btn-submit" type="submit">
+<span>Analyse Machine (/api/diagnose)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Side Diagnostic Pipeline & Telemetry Inspector (4 Cols on XL) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Visual Validation Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Input Engine Status</h3>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-primary font-bold">LIVE TELEMETRY</span>
+</div>
+<!-- Metric Bars -->
+<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span class="font-medium">Form Parameter Completeness</span>
+<span class="font-bold text-primary" id="completeness-pct">100% (7/7 Fields)</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded overflow-hidden">
+<div class="bg-primary h-full rounded transition-all duration-300" id="completeness-bar" style="width: 100%;"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1 font-label-sm text-label-sm">
+<div class="p-2 rounded bg-surface-container-low flex flex-col gap-0.5">
+<span class="text-secondary">API Target</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">POST /api/diagnose</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col gap-0.5">
+<span class="text-secondary">Expected Latency</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">&lt; 800 ms (Dual-Pass)</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Signal Vector Preview (SVG Mini Graph) -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary uppercase tracking-wider font-semibold">Simulated Sensor Signature</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">1.0 kHz Sampled</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold text-primary" id="preview-signal-label">Signal: Normal Harmonic Band</span>
+<span class="font-mono" id="preview-state-val">54.2°C | 1475 RPM</span>
+</div>
+<svg class="w-full h-16 text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 300 60">
+<path class="transition-all duration-500" d="M0,30 Q15,10 30,30 T60,30 T90,30 T120,30 T150,30 T180,30 T210,30 T240,30 T270,30 T300,30" fill="none" id="telemetry-wave" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<!-- Threshold baseline marker -->
+<line opacity="0.6" stroke="#dc2626" stroke-dasharray="3,3" stroke-width="1" x1="0" x2="300" y1="12" y2="12"></line>
+</svg>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary">
+<span>0 ms</span>
+<span class="text-error">Upper Bound: 7.1 mm/s</span>
+<span>100 ms</span>
+</div>
+</div>
+</div>
+<!-- System Architecture Card / Technical Details -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Diagnostic Multi-Pass Engine</span>
+<div class="flex flex-col gap-1.5 font-label-sm text-label-sm">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">filter_1</span>
+<span class="text-on-surface font-medium">Deterministic Rule Triage</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold text-[10px]">PASS 1</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology</span>
+<span class="text-on-surface font-medium">Gemini 1.5 Synthesis</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold text-[10px]">PASS 2</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync_alt</span>
+<span class="text-on-surface font-medium">Groq Fallback Pipeline</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold text-[10px]">STANDBY</span>
+</div>
+</div>
+</div>
+<!-- Machine Image Context Visualizer -->
+<div class="relative w-full h-32 rounded overflow-hidden mt-1 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A clean, industrial three-phase induction electric motor on an engineered concrete testing plinth inside a precision mechanical lab. Crisp direct lighting highlighting the cast-iron cooling fins, shaft coupling, and telemetry sensor cables. Sharp detail, subtle industrial metallic palette with cool blue and slate tones." id="machine-context-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwAFroUN3HJY9Oopy0-TMTWTQFNY3bsnMDExA2nF4-era6Ut-iVTgp1x7QmMHZN6_vA3kp7pdP92qdbHdiEIRQmYtDO8jD_ouJhOPj_RSGOquG4VL98otn68OJdvyNHp778cuyLJ7c2OmGXvCPmzY1uXNrIvrZY63zs043dtLOa052OSHkf7q-KUT17Ff2j27HOjjzT4tQHV71BeqboTilDT4t9JJvbPXiMrzgy-gB6e9wKoVXzWcZcw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-label-sm text-surface font-medium flex items-center gap-1" id="machine-context-caption">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Asset Archetype: 45kW Induction Motor</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Quick Safety Notice Card -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+<span class="font-headline-sm text-headline-sm">Operator Protocol Reminder</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Do not exceed maximum allowable torque or expose open rotating elements during diagnostic measurement passes. Lockout/Tagout (LOTO) is mandatory before opening casing covers.
+        </p>
+</div>
+</div>
+</form>
+<!-- Interactive Script for Form Presets, Calculations, and Dynamic Feedback -->
+<script>
+    (function initDiagnosisMachine() {
+      const machineType = document.getElementById('machine-type');
+      const tempInput = document.getElementById('temp-input');
+      const speedInput = document.getElementById('speed-input');
+      const noiseChar = document.getElementById('noise-char');
+      const leakageStatus = document.getElementById('leakage-status');
+      const performanceDrop = document.getElementById('performance-drop');
+      const fieldNotes = document.getElementById('field-notes');
+      const tempBadge = document.getElementById('temp-badge');
+      const telemetryWave = document.getElementById('telemetry-wave');
+      const previewSignalLabel = document.getElementById('preview-signal-label');
+      const previewStateVal = document.getElementById('preview-state-val');
+      const machineContextCaption = document.getElementById('machine-context-caption');
+
+      function updateVibrationRadio(val) {
+        const radios = document.querySelectorAll('input[name="vibration"]');
+        radios.forEach(r => {
+          r.checked = (r.value === val);
+        });
+      }
+
+      function updateTelemetryTelemetry() {
+        const temp = parseFloat(tempInput.value) || 0;
+        const speed = parseFloat(speedInput.value) || 0;
+        let selectedVib = 'normal';
+        const checkedVib = document.querySelector('input[name="vibration"]:checked');
+        if (checkedVib) selectedVib = checkedVib.value;
+
+        // Temperature Badge Styling
+        if (temp > 80) {
+          tempBadge.textContent = 'Severe Overheat';
+          tempBadge.className = 'font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold';
+        } else if (temp > 68) {
+          tempBadge.textContent = 'Warning: Elevated';
+          tempBadge.className = 'font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold';
+        } else {
+          tempBadge.textContent = 'Nominal State';
+          tempBadge.className = 'font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium';
+        }
+
+        // SVG Dynamic Wave Shape based on Vibration
+        if (selectedVib === 'severe') {
+          telemetryWave.setAttribute('d', 'M0,30 Q15,-10 30,55 T60,5 T90,58 T120,-8 T150,65 T180,-10 T210,60 T240,-5 T270,55 T300,30');
+          telemetryWave.setAttribute('stroke', '#ba1a1a');
+          previewSignalLabel.textContent = 'Signal: ISO 10816 Zone D Critical';
+          previewSignalLabel.className = 'font-semibold text-error';
+        } else if (selectedVib === 'high') {
+          telemetryWave.setAttribute('d', 'M0,30 Q15,5 30,50 T60,10 T90,50 T120,5 T150,52 T180,8 T210,50 T240,10 T270,50 T300,30');
+          telemetryWave.setAttribute('stroke', '#d97706');
+          previewSignalLabel.textContent = 'Signal: High Resonance Peaks';
+          previewSignalLabel.className = 'font-semibold text-amber-600';
+        } else if (selectedVib === 'elevated') {
+          telemetryWave.setAttribute('d', 'M0,30 Q15,15 30,42 T60,18 T90,42 T120,18 T150,42 T180,18 T210,42 T240,18 T270,42 T300,30');
+          telemetryWave.setAttribute('stroke', '#2563eb');
+          previewSignalLabel.textContent = 'Signal: Moderate Subharmonic Mod';
+          previewSignalLabel.className = 'font-semibold text-primary';
+        } else {
+          telemetryWave.setAttribute('d', 'M0,30 Q15,22 30,36 T60,24 T90,36 T120,24 T150,36 T180,24 T210,36 T240,24 T270,36 T300,30');
+          telemetryWave.setAttribute('stroke', '#059669');
+          previewSignalLabel.textContent = 'Signal: Normal Harmonic Band';
+          previewSignalLabel.className = 'font-semibold text-emerald-600';
+        }
+
+        previewStateVal.textContent = temp.toFixed(1) + '°C | ' + Math.round(speed) + ' RPM';
+      }
+
+      // Event listeners for inputs
+      tempInput.addEventListener('input', updateTelemetryTelemetry);
+      speedInput.addEventListener('input', updateTelemetryTelemetry);
+      document.querySelectorAll('input[name="vibration"]').forEach(radio => {
+        radio.addEventListener('change', updateTelemetryTelemetry);
+      });
+
+      // Scenario 1: Motor Bearing Overheat & High Vibration
+      document.getElementById('btn-scenario-1').addEventListener('click', function() {
+        machineType.value = 'electric-motor';
+        tempInput.value = '88.4';
+        speedInput.value = '1440';
+        updateVibrationRadio('severe');
+        noiseChar.value = 'whining';
+        leakageStatus.value = 'none';
+        performanceDrop.value = 'mild';
+        fieldNotes.value = 'Bearing drive-end housing outer temperature measured at 88.4°C via IR pyrometer. Pronounced 2.8 kHz whining tone detectable through contact accelerometer. Metallic dust observed near seal flange.';
+        machineContextCaption.innerHTML = '<span class="material-symbols-outlined text-[14px]">tune</span><span>Asset Archetype: 45kW Induction Motor (Drive End)</span>';
+        updateTelemetryTelemetry();
+      });
+
+      // Scenario 2: Pump Cavitation & Seal Drip
+      document.getElementById('btn-scenario-2').addEventListener('click', function() {
+        machineType.value = 'water-pump';
+        tempInput.value = '52.0';
+        speedInput.value = '2950';
+        updateVibrationRadio('high');
+        noiseChar.value = 'cavitation';
+        leakageStatus.value = 'minor';
+        performanceDrop.value = 'severe';
+        fieldNotes.value = 'Suction vacuum gauge reads below vapor pressure margin (-0.68 bar). Distinct acoustic crackle sound similar to gravel tumbling inside volute casing. Mechanical seal face leaking approximately 12 drops/min.';
+        machineContextCaption.innerHTML = '<span class="material-symbols-outlined text-[14px]">tune</span><span>Asset Archetype: Centrifugal Water Pump</span>';
+        updateTelemetryTelemetry();
+      });
+
+      // Clear Form functionality
+      function clearForm() {
+        machineType.value = 'electric-motor';
+        tempInput.value = '';
+        speedInput.value = '';
+        updateVibrationRadio('normal');
+        noiseChar.value = 'normal';
+        leakageStatus.value = 'none';
+        performanceDrop.value = 'none';
+        fieldNotes.value = '';
+        machineContextCaption.innerHTML = '<span class="material-symbols-outlined text-[14px]">tune</span><span>Asset Archetype: Unspecified</span>';
+        updateTelemetryTelemetry();
+      }
+
+      document.getElementById('btn-clear-top').addEventListener('click', clearForm);
+      document.getElementById('btn-reset').addEventListener('click', clearForm);
+
+      // Submit / Simulation handler
+      window.simulateDiagnosis = function() {
+        const btn = document.getElementById('btn-submit');
+        const originalContent = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Transmitting to /api/diagnose...</span>';
+        
+        setTimeout(function() {
+          btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Diagnostics Synthesized</span>';
+          btn.classList.remove('bg-primary');
+          btn.classList.add('bg-emerald-600');
+          setTimeout(function() {
+            btn.innerHTML = originalContent;
+            btn.disabled = false;
+            btn.classList.remove('bg-emerald-600');
+            btn.classList.add('bg-primary');
+          }, 2000);
+        }, 850);
+      };
+
+      // Initial run
+      updateTelemetryTelemetry();
+    })();
+  </script>
+</div></main></div></body></html>
