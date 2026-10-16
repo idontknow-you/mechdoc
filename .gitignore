@@ -1,0 +1,9 @@
+backend/.venv/
+backend/.runtime/
+**/__pycache__/
+**/.pytest_cache/
+**/.env
+frontend/node_modules/
+frontend/dist/
+frontend/test-artifacts/
+*.log
